@@ -1,0 +1,4 @@
+product_id,order_count,total_price,product_name
+2,2,30.0,Gadget
+3,2,120.0,Tool
+1,4,80.0,Widget
