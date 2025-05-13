@@ -30,6 +30,13 @@ try:
     print("\nFirst 5 rows with total column:")
     print(df.head())
     
+    # Add total column (quantity * price)
+    df['total'] = df['quantity'] * df['price']
+    
+    # Print first 5 rows with total column
+    print("\nFirst 5 rows with total column:")
+    print(df.head())
+    
     # Group by product_id, aggregate line_item_id (count), total (sum), product_name (first)
     summary_df = df.groupby('product_id').agg({
         'line_item_id': 'count',
@@ -55,6 +62,7 @@ except sqlite3.Error as e:
     print(f"Database error: {e}")
 except Exception as e:
     print(f"An error occurred: {e}")
+
 
 finally:
     # Close connection
