@@ -1,0 +1,62 @@
+Ethical Web Scraping Analysis for Wikipedia for Task #5
+
+1. Which sections of the website are restricted for crawling?
+Wikipedia restricts crawling of several sections, including:
+/wiki/Special: pages
+/wiki/Talk: pages
+/wiki/User: pages
+/wiki/User_talk: pages
+/wiki/Wikipedia: pages
+/wiki/Wikipedia_talk: pages
+/wiki/File: pages
+/wiki/File_talk: pages
+/wiki/MediaWiki: pages
+/wiki/MediaWiki_talk: pages
+/wiki/Template: pages
+/wiki/Template_talk: pages
+/wiki/Help: pages
+/wiki/Help_talk: pages
+/wiki/Category: pages
+/wiki/Category_talk: pages
+/wiki/Portal: pages
+/wiki/Portal_talk: pages
+/wiki/Book: pages
+/wiki/Book_talk: pages
+/wiki/Draft: pages
+/wiki/Draft_talk: pages
+/wiki/Education_Program: pages
+/wiki/Education_Program_talk: pages
+/wiki/TimedText: pages
+/wiki/TimedText_talk: pages
+/wiki/Module: pages
+/wiki/Module_talk: pages
+/wiki/Gadget: pages
+/wiki/Gadget_talk: pages
+/wiki/Gadget_definition: pages
+/wiki/Gadget_definition_talk: pages
+Search pages and actions
+API endpoints
+Various history, edit, and action pages
+
+2. Are there specific rules for certain user agents? Yes, specific user agents like:
+User-agent: sitecheck.internetseer.com
+Disallow: /
+
+User-agent: Zealbot
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+etc, due to misbehavior, site-copying tendencies, or irrelevance to search indexing.
+
+3. Why do websites use robots.txt and how does it promote ethical scraping? 
+Websites use robots.txt to guide crawlers on accessible site areas, managing server load, protecting sensitive content, and ensuring relevant pages are indexed. It promotes ethical scraping by clearly communicating the site owner’s preferences, encouraging crawlers to respect these boundaries.
