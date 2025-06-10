@@ -1,0 +1,18 @@
+function: say_hello
+positional parameters: none
+keyword parameters: none
+return: None
+
+function: accept_args
+positional parameters: [1, 2, 3, 'test']
+keyword parameters: none
+return: True
+
+function: return_decorator
+positional parameters: none
+keyword parameters: {'a': 1, 'b': 'hello', 'flag': True}
+return: <function logger_decorator at 0x000002A0FB56E0C0>
+
+function: say_hello positional parameters: none keyword parameters: none return: None
+function: check_args positional parameters: [1, 2, 3] keyword parameters: none return: True
+function: check_kwargs positional parameters: none keyword parameters: {'name': 'Alice', 'age': 30} return: Processed kwargs
